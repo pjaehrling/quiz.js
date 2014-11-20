@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay">
+        <span></span>
+    </div>
+
+    <div class="quiz">
+
+        <div class="row">
+            <div data-index="0" class="player cell color1">one (<span>0</span>)</div> 
+            <div data-index="1" class="player cell color2">two (<span>0</span>)</div>
+        </div>
+
+        <div class="row hideUnactive">
+            <div class="question cell">
+                <div class="label">Question:</div>
+                <div id="questionText">
+                    Loading ...
+                </div>
+            </div>
+            <div class="cell">
+                <div>
+                    <span class="label">Thema:</span>
+                    <span id="topic">Loading ...</span>
+                </div>
+                <div>
+                    <span class="label">Time (in sec.):</span>
+                    <span id="time">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hideUnactive">
+            <div id="answer1" data-index="0" class="answer cell blocked">A) Loading ...</div>
+            <div id="answer2" data-index="1" class="answer cell blocked">B) Loading ...</div>
+        </div>
+
+        <div class="row hideUnactive">
+            <div id="answer3" data-index="2" class="answer cell blocked">C) Loading ...</div>
+            <div id="answer4" data-index="3" class="answer cell blocked">D) Loading ...</div>
+        </div>
+
+        <div div class="row">
+            <div data-index="2" class="player cell color3">three (<span>0</span>)</div>
+            <div data-index="3" class="player cell color4">four (<span>0</span>)</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="js/quiz.min.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8" defer></script>
+</body>
+</html>

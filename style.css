@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial;
+    font-weight:bold;
+    font-size: 110%;
+}
+
+div {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.player {
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #F2F2F2;
+}
+
+.answer { 
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    border:2px solid white;
+    background-color: #E2E2E2;
+}
+.question {
+    font-weight: bold;
+}
+.label {
+    font-weight: normal;
+}
+
+/* GRID LAYOUT */
+.quiz {
+    clear: both;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    width: 50%;
+}
+
+/* colors */
+.color1 { background-color: #8A6DE9; }
+.color2 { background-color: #00C6BE; }
+.color3 { background-color: #FF716F; }
+.color4 { background-color: #536576; }
+
+.red { color: #EF4E3A; }
+.green { color: #66CC33; }
+.blocked { opacity: 0.5; }
+
+/* Overlay (Start, Messages, ...) */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
+    z-index: 2;
+    text-align: left;
+    display: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#overlay > span{
+    position: absolute;
+    top: 50%;  
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    z-index: 3;
+}

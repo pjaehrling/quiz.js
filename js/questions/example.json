@@ -1,0 +1,32 @@
+{
+  "topic": "Informatik",
+  "questionTime": 120,
+  "answerTime": 30,
+  "pointsByAnswer": 1,
+  "questions": [ 
+    {
+      "text": "How much is one Byte?", 
+      "answers": ["8 Bit"
+                , "32 Bit"
+                , "1000 Bit"
+                , "1024 Bit"],
+      "correctIndex": 0
+    },
+    {
+      "text": "What is not a programming language?", 
+      "answers": ["Java"
+                , "Scala"
+                , "Fortran"
+                , "Debian"],
+      "correctIndex": 3
+    },
+    {
+      "text": "What's the number '13' in the binary system (0/1)?", 
+      "answers": ["1 1 0 0"
+                , "1 0 1 0"
+                , "0 1 1 0"
+                , "1 1 0 1"],
+      "correctIndex": 3
+    }
+  ]
+}
